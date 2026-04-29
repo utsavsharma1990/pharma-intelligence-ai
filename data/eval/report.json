@@ -1,0 +1,190 @@
+{
+  "total_cases": 10,
+  "agent_accuracy": 0.9,
+  "avg_faithfulness": 0.0,
+  "avg_relevancy": 0.0,
+  "avg_retrieval_prec": 0.95,
+  "latency": {
+    "p50": 47.0,
+    "p95": 24454.0,
+    "p99": 24454.0,
+    "mean": 2495.4,
+    "count": 10
+  },
+  "case_results": [
+    {
+      "case_id": "gs_001",
+      "query": "What adverse events were reported in NCT05123456?",
+      "expected_agent": "safety",
+      "actual_agent": "safety",
+      "agent_correct": true,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "retrieval_precision": 1.0,
+      "latency_ms": 24454.0,
+      "answer_preview": "Based on retrieved AE data, common adverse events include pneumonitis (3.0%), colitis (2.0%), and fatigue (40.0%). Serious events are rare but include immune-related toxicities.\n\n---\n**Specialist:** s",
+      "retrieved_nct_ids": [
+        "NCT05123456"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gs_002",
+      "query": "What are the eligibility criteria for NCT05123456?",
+      "expected_agent": "search",
+      "actual_agent": "search",
+      "agent_correct": true,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "retrieval_precision": 1.0,
+      "latency_ms": 78.0,
+      "answer_preview": "Eligibility requires adults 18+, ECOG 0-1, no prior anti-PD-1 therapy, no active brain metastases.\n\n---\n**Specialist:** search agent | **Routing reason:** [echo] reason for: what are the eligibility c",
+      "retrieved_nct_ids": [
+        "NCT05123456"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gs_003",
+      "query": "Compare the safety profiles of NCT05123456 and NCT04567890",
+      "expected_agent": "comparative",
+      "actual_agent": "safety",
+      "agent_correct": false,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "retrieval_precision": 0.5,
+      "latency_ms": 31.0,
+      "answer_preview": "The safety profile shows expected immune-related events. Most common: fatigue, nausea. Serious: pneumonitis, colitis.\n\n---\n**Specialist:** safety agent | **Routing reason:** [echo] reason for: compare",
+      "retrieved_nct_ids": [
+        "NCT05123456"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gs_004",
+      "query": "What is the primary endpoint of NCT04567890?",
+      "expected_agent": "search",
+      "actual_agent": "search",
+      "agent_correct": true,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "retrieval_precision": 1.0,
+      "latency_ms": 47.0,
+      "answer_preview": "The primary outcome is Overall Survival (OS), measured up to 3 years from randomization.\n\n---\n**Specialist:** search agent | **Routing reason:** [echo] reason for: what is the primary endpoint of nct0",
+      "retrieved_nct_ids": [
+        "NCT04567890"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gs_005",
+      "query": "What serious adverse events occurred in the nivolumab trial?",
+      "expected_agent": "safety",
+      "actual_agent": "safety",
+      "agent_correct": true,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "retrieval_precision": 1.0,
+      "latency_ms": 47.0,
+      "answer_preview": "Based on retrieved AE data, common adverse events include pneumonitis (3.0%), colitis (2.0%), and fatigue (40.0%). Serious events are rare but include immune-related toxicities.\n\n---\n**Specialist:** s",
+      "retrieved_nct_ids": [
+        "NCT05123456",
+        "NCT04567890",
+        "NCT06789012"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gs_006",
+      "query": "Who sponsors the pembrolizumab NSCLC trial?",
+      "expected_agent": "search",
+      "actual_agent": "search",
+      "agent_correct": true,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "retrieval_precision": 1.0,
+      "latency_ms": 47.0,
+      "answer_preview": "The trial is sponsored by Merck Sharp & Dohme LLC (industry sponsor).\n\n---\n**Specialist:** search agent | **Routing reason:** [echo] reason for: who sponsors the pembrolizumab nsclc trial?",
+      "retrieved_nct_ids": [
+        "NCT04567890",
+        "NCT05123456"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gs_007",
+      "query": "Compare the enrollment size of NCT05123456 vs NCT06789012",
+      "expected_agent": "comparative",
+      "actual_agent": "comparative",
+      "agent_correct": true,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "retrieval_precision": 1.0,
+      "latency_ms": 93.0,
+      "answer_preview": "Found 3 matching clinical trials in the index. The most relevant is NCT05123456 (Phase 3, RECRUITING).\n\n---\n**Specialist:** comparative agent | **Routing reason:** [echo] reason for: compare the enrol",
+      "retrieved_nct_ids": [
+        "NCT06789012",
+        "NCT05123456"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gs_008",
+      "query": "What drugs are being tested in the CLL trial NCT06789012?",
+      "expected_agent": "search",
+      "actual_agent": "search",
+      "agent_correct": true,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "retrieval_precision": 1.0,
+      "latency_ms": 63.0,
+      "answer_preview": "This is a Phase 3 study with planned enrollment of 800 participants.\n\n---\n**Specialist:** search agent | **Routing reason:** [echo] reason for: what drugs are being tested in the cll trial nct06789012",
+      "retrieved_nct_ids": [
+        "NCT06789012"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gs_009",
+      "query": "What are the cardiac adverse events in the ibrutinib trial?",
+      "expected_agent": "safety",
+      "actual_agent": "safety",
+      "agent_correct": true,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "retrieval_precision": 1.0,
+      "latency_ms": 47.0,
+      "answer_preview": "Based on retrieved AE data, common adverse events include pneumonitis (3.0%), colitis (2.0%), and fatigue (40.0%). Serious events are rare but include immune-related toxicities.\n\n---\n**Specialist:** s",
+      "retrieved_nct_ids": [
+        "NCT05123456",
+        "NCT04567890",
+        "NCT06789012"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gs_010",
+      "query": "Compare pembrolizumab and nivolumab trials in terms of study design",
+      "expected_agent": "comparative",
+      "actual_agent": "comparative",
+      "agent_correct": true,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "retrieval_precision": 1.0,
+      "latency_ms": 47.0,
+      "answer_preview": "Found 3 matching clinical trials in the index. The most relevant is NCT05123456 (Phase 3, RECRUITING).\n\n---\n**Specialist:** comparative agent | **Routing reason:** [echo] reason for: compare pembroliz",
+      "retrieved_nct_ids": [
+        "NCT06789012",
+        "NCT04567890",
+        "NCT05123456"
+      ],
+      "error": null
+    }
+  ],
+  "config_snapshot": {
+    "llm_provider": "echo",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "vector_store": "chroma",
+    "chunks_indexed": 15
+  }
+}

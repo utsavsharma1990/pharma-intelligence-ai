@@ -1,0 +1,412 @@
+{
+  "_cache_key": "studies|cond=lung cancer|phase=|status=|sponsor=|page=0",
+  "_cached_at": 1777248128,
+  "data": {
+    "totalCount": 3,
+    "nextPageToken": null,
+    "studies": [
+      {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT05123456",
+            "briefTitle": "Pembrolizumab Plus Chemotherapy in Advanced NSCLC",
+            "officialTitle": "A Phase III Randomized Study of Pembrolizumab in Combination With Platinum-Based Chemotherapy vs Chemotherapy Alone"
+          },
+          "statusModule": {
+            "overallStatus": "RECRUITING",
+            "startDateStruct": {
+              "date": "2023-01-15"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2026-06-30"
+            }
+          },
+          "designModule": {
+            "phases": [
+              "PHASE3"
+            ],
+            "studyType": "INTERVENTIONAL",
+            "enrollmentInfo": {
+              "count": 800,
+              "type": "ESTIMATED"
+            }
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n- Adults 18 years or older\n- Histologically confirmed metastatic NSCLC\n- No prior systemic therapy for metastatic disease\n- ECOG performance status 0 or 1\n\nExclusion Criteria:\n- Prior anti-PD-1 or anti-PD-L1 therapy\n- Active brain metastases\n- Systemic corticosteroid use within 7 days",
+            "minimumAge": "18 Years",
+            "sex": "ALL"
+          },
+          "armsInterventionsModule": {
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "Pembrolizumab",
+                "description": "200mg IV every 3 weeks"
+              },
+              {
+                "type": "DRUG",
+                "name": "Carboplatin",
+                "description": "AUC 5 IV every 3 weeks"
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Overall Survival (OS)",
+                "description": "Time from randomization to death",
+                "timeFrame": "Up to 3 years"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Progression-Free Survival (PFS)",
+                "timeFrame": "Up to 3 years"
+              },
+              {
+                "measure": "Objective Response Rate (ORR)",
+                "timeFrame": "Up to 2 years"
+              }
+            ]
+          },
+          "sponsorCollaboratorsModule": {
+            "leadSponsor": {
+              "name": "Merck Sharp & Dohme LLC",
+              "class": "INDUSTRY"
+            }
+          },
+          "contactsLocationsModule": {
+            "locations": [
+              {
+                "facility": "Memorial Sloan Kettering",
+                "city": "New York",
+                "state": "New York",
+                "country": "United States"
+              },
+              {
+                "facility": "MD Anderson Cancer Center",
+                "city": "Houston",
+                "state": "Texas",
+                "country": "United States"
+              }
+            ]
+          },
+          "adverseEventsModule": {
+            "seriousEvents": [
+              {
+                "term": "Pneumonitis",
+                "organSystem": "Respiratory",
+                "stats": [
+                  {
+                    "numAffected": 24,
+                    "numAtRisk": 800
+                  }
+                ]
+              },
+              {
+                "term": "Colitis",
+                "organSystem": "Gastrointestinal",
+                "stats": [
+                  {
+                    "numAffected": 16,
+                    "numAtRisk": 800
+                  }
+                ]
+              }
+            ],
+            "otherEvents": [
+              {
+                "term": "Fatigue",
+                "organSystem": "General",
+                "stats": [
+                  {
+                    "numAffected": 320,
+                    "numAtRisk": 800
+                  }
+                ]
+              },
+              {
+                "term": "Nausea",
+                "organSystem": "Gastrointestinal",
+                "stats": [
+                  {
+                    "numAffected": 240,
+                    "numAtRisk": 800
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT04567890",
+            "briefTitle": "Nivolumab vs Docetaxel in Previously Treated NSCLC",
+            "officialTitle": "Phase III Study of Nivolumab Versus Docetaxel in Previously Treated Advanced NSCLC"
+          },
+          "statusModule": {
+            "overallStatus": "ACTIVE_NOT_RECRUITING",
+            "startDateStruct": {
+              "date": "2021-03-01"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2025-12-31"
+            }
+          },
+          "designModule": {
+            "phases": [
+              "PHASE3"
+            ],
+            "studyType": "INTERVENTIONAL",
+            "enrollmentInfo": {
+              "count": 582,
+              "type": "ACTUAL"
+            }
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n- Age 18 years or older\n- Confirmed advanced NSCLC\n- One or two prior lines of therapy\n- ECOG PS 0-2\n\nExclusion Criteria:\n- Prior immunotherapy\n- Untreated CNS metastases\n- Active autoimmune disease requiring systemic treatment",
+            "minimumAge": "18 Years",
+            "sex": "ALL"
+          },
+          "armsInterventionsModule": {
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "Nivolumab",
+                "description": "3mg/kg IV every 2 weeks"
+              },
+              {
+                "type": "DRUG",
+                "name": "Docetaxel",
+                "description": "75mg/m2 IV every 3 weeks"
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Overall Survival (OS)",
+                "description": "Time from randomization to death",
+                "timeFrame": "Up to 4 years"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Progression-Free Survival",
+                "timeFrame": "Up to 4 years"
+              },
+              {
+                "measure": "Overall Response Rate",
+                "timeFrame": "Up to 2 years"
+              }
+            ]
+          },
+          "sponsorCollaboratorsModule": {
+            "leadSponsor": {
+              "name": "Bristol-Myers Squibb",
+              "class": "INDUSTRY"
+            }
+          },
+          "contactsLocationsModule": {
+            "locations": [
+              {
+                "facility": "Dana-Farber Cancer Institute",
+                "city": "Boston",
+                "state": "Massachusetts",
+                "country": "United States"
+              },
+              {
+                "facility": "UCLA Medical Center",
+                "city": "Los Angeles",
+                "state": "California",
+                "country": "United States"
+              }
+            ]
+          },
+          "adverseEventsModule": {
+            "seriousEvents": [
+              {
+                "term": "Pneumonitis",
+                "organSystem": "Respiratory",
+                "stats": [
+                  {
+                    "numAffected": 18,
+                    "numAtRisk": 582
+                  }
+                ]
+              },
+              {
+                "term": "Hepatitis",
+                "organSystem": "Hepatobiliary",
+                "stats": [
+                  {
+                    "numAffected": 10,
+                    "numAtRisk": 582
+                  }
+                ]
+              }
+            ],
+            "otherEvents": [
+              {
+                "term": "Fatigue",
+                "organSystem": "General",
+                "stats": [
+                  {
+                    "numAffected": 175,
+                    "numAtRisk": 582
+                  }
+                ]
+              },
+              {
+                "term": "Rash",
+                "organSystem": "Skin",
+                "stats": [
+                  {
+                    "numAffected": 93,
+                    "numAtRisk": 582
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT06789012",
+            "briefTitle": "Ibrutinib in Treatment-Naive Older Patients With CLL",
+            "officialTitle": "Phase III Randomized Study of Ibrutinib vs Chlorambucil in Treatment-Naive Older Patients With CLL"
+          },
+          "statusModule": {
+            "overallStatus": "RECRUITING",
+            "startDateStruct": {
+              "date": "2024-06-01"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2028-01-01"
+            }
+          },
+          "designModule": {
+            "phases": [
+              "PHASE3"
+            ],
+            "studyType": "INTERVENTIONAL",
+            "enrollmentInfo": {
+              "count": 400,
+              "type": "ESTIMATED"
+            }
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n- Age 65 years or older\n- Confirmed CLL requiring treatment\n- No prior therapy for CLL\n- Creatinine clearance >= 30 mL/min\n\nExclusion Criteria:\n- Prior BTK inhibitor therapy\n- Known transformation to aggressive lymphoma\n- Requires anticoagulation with warfarin",
+            "minimumAge": "65 Years",
+            "sex": "ALL"
+          },
+          "armsInterventionsModule": {
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "Ibrutinib",
+                "description": "420mg orally once daily until progression"
+              },
+              {
+                "type": "DRUG",
+                "name": "Chlorambucil",
+                "description": "0.5mg/kg orally on days 1 and 15 of each 28-day cycle"
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Progression-Free Survival (PFS)",
+                "description": "Time from randomization to disease progression or death",
+                "timeFrame": "Up to 5 years"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Overall Survival",
+                "timeFrame": "Up to 5 years"
+              },
+              {
+                "measure": "Overall Response Rate",
+                "timeFrame": "Up to 3 years"
+              }
+            ]
+          },
+          "sponsorCollaboratorsModule": {
+            "leadSponsor": {
+              "name": "AbbVie",
+              "class": "INDUSTRY"
+            }
+          },
+          "contactsLocationsModule": {
+            "locations": [
+              {
+                "facility": "Mayo Clinic",
+                "city": "Rochester",
+                "state": "Minnesota",
+                "country": "United States"
+              },
+              {
+                "facility": "Johns Hopkins Hospital",
+                "city": "Baltimore",
+                "state": "Maryland",
+                "country": "United States"
+              }
+            ]
+          },
+          "adverseEventsModule": {
+            "seriousEvents": [
+              {
+                "term": "Atrial fibrillation",
+                "organSystem": "Cardiac",
+                "stats": [
+                  {
+                    "numAffected": 28,
+                    "numAtRisk": 400
+                  }
+                ]
+              },
+              {
+                "term": "Major bleeding",
+                "organSystem": "Vascular",
+                "stats": [
+                  {
+                    "numAffected": 12,
+                    "numAtRisk": 400
+                  }
+                ]
+              }
+            ],
+            "otherEvents": [
+              {
+                "term": "Diarrhea",
+                "organSystem": "Gastrointestinal",
+                "stats": [
+                  {
+                    "numAffected": 160,
+                    "numAtRisk": 400
+                  }
+                ]
+              },
+              {
+                "term": "Fatigue",
+                "organSystem": "General",
+                "stats": [
+                  {
+                    "numAffected": 140,
+                    "numAtRisk": 400
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
