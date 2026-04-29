@@ -1,0 +1,45 @@
+# Local development stack
+# Usage:
+#   docker-compose up --build          # build + start
+#   docker-compose up -d               # start in background
+#   docker-compose logs -f api         # tail logs
+#   docker-compose exec api python ingest.py  # run ingest inside container
+#   docker-compose down                # stop
+
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime     # use the lean runtime stage
+    container_name: pharma-intelligence-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount data directories so they persist across container restarts
+      # and so you can inspect them from the host
+      - ./data:/app/data
+      - ./chroma_db:/app/chroma_db
+    environment:
+      # Override any .env values here for Docker context
+      - LLM_PROVIDER=${LLM_PROVIDER:-echo}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_MODEL=${ANTHROPIC_MODEL:-claude-sonnet-4-5}
+      - CT_API_BASE_URL=${CT_API_BASE_URL:-https://clinicaltrials.gov/api/v2}
+      - VECTOR_STORE=chroma
+      - CHROMA_PERSIST_DIR=/app/chroma_db
+      - EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - LOG_FORMAT=json   # always JSON in containers (for log aggregators)
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s    # give time for model loading on first start
+    restart: unless-stopped
